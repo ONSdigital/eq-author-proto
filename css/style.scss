@@ -219,6 +219,10 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   text-align: left;
 }
 
+.invisible th {
+  opacity:0;
+}
+
 .survey-list th, .survey-list td {
   padding:0.5rem 1rem;
 }
@@ -231,6 +235,15 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 .t-row td {
   padding:1.25rem 1rem;
+}
+
+.t-row td a {
+  color:#61BDE0;
+  text-decoration: none;
+}
+
+.icon-cell {
+  text-align: center;
 }
 
 tr.table-header {
