@@ -144,6 +144,8 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 .account-actions {
   color:white;
+  position:absolute;
+  right:10px;
 }
 
 /* breadcrumb */
@@ -206,6 +208,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 /* app canvas */
 .canvas {
   padding:2rem;
+  background: #EBF0F2;
 }
 
 /* list */
@@ -256,4 +259,45 @@ tr.table-header {
 
 .center, th.center {
   text-align: center;
+}
+
+.popover {
+  display:none;
+}
+
+.action-container {
+  position:relative;
+  cursor: pointer;
+}
+
+.popover-actions {
+  list-style-type: none;
+  padding:1rem;
+  background:white;
+  border:1px solid #eee;
+  border-radius:4px;
+  position:absolute;
+  width: 120px;
+  right:30px;
+  top:0;
+  z-index: 100;
+  display: none;
+  opacity:0;
+  transition:all .3s;
+  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.popover-actions li {
+  margin:0 0 10px 0;
+}
+
+.popover-actions img {
+  width:16px;
+  height:auto;
+  margin:0 10px 0 0;
+}
+
+.popover-actions.on {
+  display: block;
+  opacity:1;
 }

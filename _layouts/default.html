@@ -7,6 +7,23 @@
 
     {{ content }}
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+    $(function() {
+      var popover = $(".popover").html();
+      $(".action-container").append(popover);
+
+      $(".action-container").click(function() {
+        $('.action-container').not(this).each(function(){
+          $(".popover-actions").removeClass("on");
+        });
+        $(this).find(".popover-actions").toggleClass("on");
+      });
+
+    });
+    </script>
+
   </body>
 
 </html>
