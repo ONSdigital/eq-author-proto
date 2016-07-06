@@ -240,7 +240,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
   padding:1.25rem 1rem;
 }
 
-.t-row td a {
+td a {
   color:#61BDE0;
   text-decoration: none;
 }
@@ -265,7 +265,11 @@ tr.table-header {
   display:none;
 }
 
-.action-container {
+.filter {
+  margin-left: 5px;
+}
+
+.questionnaire-actions, .survey-actions {
   position:relative;
   cursor: pointer;
 }

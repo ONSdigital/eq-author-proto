@@ -11,14 +11,28 @@
 
     <script>
     $(function() {
-      var popover = $(".popover").html();
-      $(".action-container").append(popover);
+      var qpopover = $(".question-popover").html();
+      $(".questionnaire-actions").append(qpopover);
 
-      $(".action-container").click(function() {
-        $('.action-container').not(this).each(function(){
+      var spopover = $(".survey-popover").html();
+      $(".survey-actions").append(spopover);
+
+      $(".questionnaire-actions").click(function() {
+        $('.questionnaire-actions').not(this).each(function(){
           $(".popover-actions").removeClass("on");
         });
         $(this).find(".popover-actions").toggleClass("on off");
+      });
+
+      $(".survey-actions").click(function() {
+        $('.survey-actions').not(this).each(function(){
+          $(".popover-actions").removeClass("on");
+        });
+        $(this).find(".popover-actions").toggleClass("on off");
+      });
+
+      $(".comments").click(function(){
+        alert("placeholder for comment status bubble")
       });
 
     });
