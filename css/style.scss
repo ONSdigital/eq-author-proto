@@ -57,29 +57,32 @@ body, html {
   font-size: 1rem;
   color: #4A4A4A;
   letter-spacing: 0.46px;
-  margin:0.75rem 0;
+  margin:0;
 }
 
 .susi-inner input[type=text], .susi-inner input[type=password] {
   appearance:none;
-  padding: 0.5rem;
+  padding: 1rem;
   width:100%;
   background: #FCFCFC;
   border: 1px solid #E5E5E5;
   border-radius: 1px;
+  margin:0.5rem 0 1rem 0;
 }
 
-.susi-inner input[type=submit] {
+.susi-inner input[type=submit], a.cta {
   appearance:none;
   background: $ons-blue;
   border: none;
   color:white;
   text-align: center;
   display: block;
-  margin:1.5rem 0;
-  padding: 0.75rem;
+  margin:1rem 0;
+  padding: 1rem;
   width:100%;
   transition: all .3s;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .susi-inner input[type=submit]:active {
@@ -108,7 +111,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .password-toggle {
   position:absolute;
   right:8px;
-  top:12px;
+  top:26px;
   font-size:10px;
   font-weight: bold;
   color:#888;
@@ -153,6 +156,16 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .breadcrumb {
   background: #f2f2f2;
   padding:0.5rem;
+}
+
+.breadcrumb a {
+  color:#61BDE0;
+  text-decoration: none;
+  margin-right: 3px;
+}
+
+.line {
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .breadcrumb div {
@@ -209,6 +222,11 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .canvas {
   padding:2rem;
   background: #EBF0F2;
+  position: relative;
+}
+
+.rel {
+  position: relative;
 }
 
 /* list */
@@ -238,6 +256,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 .t-row td {
   padding:1.25rem 1rem;
+  font-size:1rem;
 }
 
 td a {
@@ -309,4 +328,51 @@ tr.table-header {
 .popover-actions.off {
   display: none;
   opacity:0;
+}
+
+.add-survey {
+  background: white;
+  width:280px;
+  padding:2rem;
+}
+
+.create {
+  width:420px;
+  margin:1rem auto;
+  text-align: center;
+}
+
+.create h1 {
+  font-size:32px;
+  font-weight: 400;
+  color: #4A4A4A;
+  margin-top:0;
+}
+
+.create-inner {
+  padding:2.5rem;
+  background: white;
+  border-radius:4px;
+  border:1px solid #e7e7e7;
+}
+
+.create label {
+  display:block;
+  font-weight: 400;
+  text-align: left;
+  font-size:18px;
+}
+
+.create input[type=text] {
+  width:100%;
+  padding:1rem;
+  margin:0.5rem 0 1rem 0;
+  background: #fcfcfc;
+  border:1px solid #e8e8e8;
+  border-radius: 3px;
+}
+
+a.cancel {
+  color:#61BDE0;
+  text-decoration: none;
 }
