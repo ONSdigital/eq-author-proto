@@ -3,12 +3,14 @@ eq tool authoring prototype
 
 Clone locally 
 
-https://github.com/ONSdigital/eq-dahl-prototypes.git
+$ git clone https://github.com/ONSdigital/eq-dahl-prototypes.git
 
 #Install jekyll
 
 $ gem install jekyll
+
 $ jekyll new my-awesome-site
+
 $ cd my-awesome-site
 
 #Run
