@@ -1,7 +1,9 @@
 # eq-author-proto
 eq tool authoring prototype
 
-Clone locally 
+Create a folder on your machine where you'd like the prototype to live and navigate to it in your terminal 
+
+#Clone the project 
 
 $ git clone https://github.com/ONSdigital/eq-dahl-prototypes.git
 
@@ -9,14 +11,16 @@ $ git clone https://github.com/ONSdigital/eq-dahl-prototypes.git
 
 $ gem install jekyll
 
-$ jekyll new my-awesome-site
+#Switch to the prototype directory
 
-$ cd my-awesome-site
+$ cd eq-dahl-prototypes
 
-#Run
+#Run Jekyll
 
 $ jekyll serve
 
-Browse to http://localhost:4000
+#Pushing changes
 
-Push changes to gh-pages branch to view at https://onsdigital.github.io/eq-dahl-prototypes/
+commit and push to gh-pages branch
+
+view at https://onsdigital.github.io/eq-dahl-prototypes/
